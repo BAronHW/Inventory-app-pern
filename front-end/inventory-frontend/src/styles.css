@@ -1,0 +1,402 @@
+/* App */
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  /* CategoryCard */
+  .category-card {
+    padding: 20px;
+  }
+  
+  .item-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* CategoryList */
+  .loading {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .error {
+    text-align: center;
+    margin-top: 20px;
+    color: red;
+  }
+  
+  .category-list {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 10px;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .no-categories {
+    color: gray;
+  }
+  
+  .category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+  }
+  
+  .category-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  /* Home */
+  .item-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  .item-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f8f8f8;
+  }
+  
+  /* ItemCard */
+  .item-card-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .item-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .item-card:hover {
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .item-card h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* ItemDetail */
+  .error-screen, .loading-screen {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  
+  .item-detail {
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .back-link {
+    color: #007bff;
+    text-decoration: none;
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+  
+  .item-detail-card {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .item-detail-content {
+    padding: 20px;
+  }
+  
+  .item-detail-content h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* ItemList */
+  .error-screen {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  
+  .item-list {
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .item-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 10px;
+    color: white;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+  
+  /* NewCat */
+  .new-cat {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+  }
+  
+  .error, .success {
+    margin-bottom: 10px;
+  }
+  
+  .error {
+    color: red;
+  }
+  
+  .success {
+    color: green;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  .input, .textarea, .button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* NewItem */
+  .new-item {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  .input, .textarea, .select, .button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .select {
+    width: 100%;
+  }
+  
+  .button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+
+  .delete-button{
+    background-color: #e7061d;
+    padding: 0.5rem;
+    margin: 0.1rem;
+    border-radius: 0.5rem;
+    opacity: 1rem;
+  }
+
+  /* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Auth container styles */
+.auth-container {
+  max-width: 300px;
+  margin: 40px auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.auth-container h1, .auth-container h2 {
+  text-align: center;
+  color: #333;
+}
+
+/* Form styles */
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.button {
+  padding: 10px;
+  background-color: #1877f2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 16px;
+}
+
+.button:hover {
+  background-color: #166fe5;
+}
+
+/* Message styles */
+.message {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.error {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.success {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+/* Switch view styles */
+.switch-view {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.link {
+  color: #1877f2;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* NewItem component styles */
+.new-item {
+  margin-top: 20px;
+}
+
+.new-item h2 {
+  color: #333;
+}
+
+.new-item .form-group {
+  margin-bottom: 15px;
+}
+
+.new-item label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.new-item .input,
+.new-item .textarea,
+.new-item .select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.new-item .textarea {
+  resize: vertical;
+}
+
+.new-item .button {
+  width: 100%;
+  margin-top: 10px;
+}
+  
